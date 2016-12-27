@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AgoraIOS_Example' do
+  pod 'AgoraIOS', :path => '../'
+
+  target 'AgoraIOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
