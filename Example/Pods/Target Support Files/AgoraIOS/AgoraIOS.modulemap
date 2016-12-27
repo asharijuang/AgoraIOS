@@ -1,0 +1,6 @@
+framework module AgoraIOS {
+  umbrella header "AgoraIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

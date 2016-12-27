@@ -25,18 +25,24 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'asharijuang@me.com' => 'asharijuang@me.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/AgoraIOS.git', :tag => s.version.to_s }
+  s.source           = { "http" => "http://download.agora.io/sdk/release/Agora_Native_SDK_for_iOS_v1_8_0_FULL.zip" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'AgoraIOS/Classes/**/*'
+# s.source_files = 'AgoraIOS/Classes/**/*'
   
   # s.resource_bundles = {
   #   'AgoraIOS' => ['AgoraIOS/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+
+  s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.requires_arc          = false
+  s.libraries             = "c++", "icucore", "z"
+  s.pod_target_xcconfig   = {
+    "FRAMEWORK_SEARCH_PATHS" => "${PODS_ROOT}/libs/AgoraRtcEngineKit"
+    }
 end

@@ -1,0 +1,16 @@
+PODS:
+  - AgoraIOS (0.1.0)
+
+DEPENDENCIES:
+  - AgoraIOS (from `../`)
+
+EXTERNAL SOURCES:
+  AgoraIOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AgoraIOS: f01c437be10548677cf7bb3a2fb4afc11053a9ec
+
+PODFILE CHECKSUM: 0ab37d8092d7b8365ab08f6cf28eda052fcc194e
+
+COCOAPODS: 1.1.1
